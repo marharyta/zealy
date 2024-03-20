@@ -24,26 +24,9 @@ const ProductCard = ({
       />
       <div>
         {name && (
-          <h3
-            className={`mt-2 font-bold leading-10 text-gray-100 ${
-              small ? "" : "text-xl"
-            }`}
-          >
+          <h3 className={`mt-2 font-bold leading-10 ${small ? "" : "text-xl"}`}>
             {name}
           </h3>
-        )}
-        {!small && price && (
-          <div className="my-1 text-md leading-5 text-gray-300">
-            {price.toLocaleString("en-US", {
-              style: "currency",
-              currency: "USD",
-            })}
-          </div>
-        )}
-        {!small && description && (
-          <div className="mt-1 text-sm leading-5 text-gray-300 font-light italic">
-            {description}
-          </div>
         )}
       </div>
     </div>

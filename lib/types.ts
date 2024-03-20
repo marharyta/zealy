@@ -1,6 +1,7 @@
 export interface Review {
   rating: number;
   text: string;
+  emoji: string;
 }
 
 export interface Product {

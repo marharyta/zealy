@@ -1,37 +1,34 @@
-import { Product, Review } from "./types";
+import { Product, Review } from "@/lib/types";
 
 const products = [
   {
     id: 1,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/castle-t-shirt.jpg",
+    name: "Castle T-Shirt",
     price: 25,
     description:
-      "And I think it's gonna be a long, long time Til touchdown brings me round again to find Im not the man they think I am at home",
+      "Beware the castle of the blue wizard of Bazmagar! It is said that he has a dragon!",
     reviews: [
       {
         rating: 5,
-        emoji: "",
         text: "This is the best t-shirt I've ever owned! The design is amazing and the quality is top-notch.",
       },
       {
         rating: 4,
-        emoji: "",
         text: "I really like this t-shirt, the design is cool and it's comfortable to wear. The only downside is that it shrunk a bit after washing.",
       },
     ],
   },
   {
     id: 2,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/dragon-t-shirt.jpg",
+    name: "Dragon T-Shirt",
     price: 25,
     description:
-      "I got you, moonlight, you're my starlight, I need you all night, come on, dance with me, I'm levitating",
+      "This dragon is not to be trifled with, his fire has burned many enemies to ash!",
     reviews: [
       {
         rating: 5,
-        emoji: "",
         text: "I love this t-shirt! The dragon design is awesome and the material is high-quality.",
       },
       {
@@ -42,11 +39,11 @@ const products = [
   },
   {
     id: 3,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/elf-t-shirt.jpg",
+    name: "Elf T-Shirt",
     price: 25,
     description:
-      "Fly me to the moon, Let me play among the stars, And let me see what spring is like, On a-Jupiter and Mars",
+      "This fierce elf is ready to take on any foe, with her trusty bow and arrow!",
     reviews: [
       {
         rating: 4,
@@ -62,60 +59,54 @@ const products = [
   },
   {
     id: 4,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/wizard-t-shirt.jpg",
+    name: "Wizard T-Shirt",
     price: 25,
     description:
-      "I never knew, I never knew You could hold moonlight in your hands 'Til the night I held you You are my moonlight, moonlight",
+      "This wizard is ready to cast a spell on you, and it won't be a good one!",
     reviews: [
       {
         rating: 5,
-        emoji: "",
         text: "This t-shirt is awesome! The wizard design is so cool and the material is high-quality.",
       },
       {
         rating: 4,
-        emoji: "",
         text: "I really like this t-shirt, the wizard design is unique and the fabric is soft. The only downside is that it's a bit too tight around the neck.",
       },
     ],
   },
   {
     id: 5,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/wizard-t-shirt-2.jpg",
+    name: "Wizard T-Shirt ][",
     price: 25,
     description:
-      "I wanna go to the moon, don't leave so soon (Don't leave so soon), How could I get through? (How could I get through?), I wanna go to the moon, don't leave so soon (Don't leave so soon)",
+      "The wizard is powerful and knows many dangerous spells, beware traveller!",
     reviews: [
       {
         rating: 5,
-        emoji: "",
         text: "This is the best t-shirt I've ever owned! The wizard design is amazing and the quality is top-notch.",
       },
       {
         rating: 5,
-        emoji: "",
         text: "I love this t-shirt! The wizard design is so cool and the fit is perfect. I wear it all the time.",
       },
     ],
   },
   {
     id: 6,
-    image: "/favicon.png",
-    name: "Moon",
+    image: "/barbarian-t-shirt.jpg",
+    name: "Barbarian T-Shirt",
     price: 25,
     description:
-      "But we're lookin' at the same moon, Wonder if you miss me too when we're lookin' at the same moon, How can I be dead to you when we're lookin' at the same moon",
+      "This barbarian is ready to take on any foe, with his trusty broadsword!",
     reviews: [
       {
         rating: 4,
-        emoji: "",
         text: "I really like this t-shirt, the barbarian design is unique and the fabric is soft. The only downside is that it's a bit too baggy.",
       },
       {
         rating: 5,
-        emoji: "",
         text: "This t-shirt is amazing! The barbarian design is so cool and the fit is perfect. I've gotten so many compliments on it.",
       },
     ],
