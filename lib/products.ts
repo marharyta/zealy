@@ -8,18 +8,6 @@ const products = [
     price: 25,
     description:
       "And I think it's gonna be a long, long time Til touchdown brings me round again to find Im not the man they think I am at home",
-    reviews: [
-      {
-        rating: 5,
-        emoji: "",
-        text: "This is the best t-shirt I've ever owned! The design is amazing and the quality is top-notch.",
-      },
-      {
-        rating: 4,
-        emoji: "",
-        text: "I really like this t-shirt, the design is cool and it's comfortable to wear. The only downside is that it shrunk a bit after washing.",
-      },
-    ],
   },
   {
     id: 2,
@@ -28,17 +16,6 @@ const products = [
     price: 25,
     description:
       "I got you, moonlight, you're my starlight, I need you all night, come on, dance with me, I'm levitating",
-    reviews: [
-      {
-        rating: 5,
-        emoji: "",
-        text: "I love this t-shirt! The dragon design is awesome and the material is high-quality.",
-      },
-      {
-        rating: 5,
-        text: "This is my new favorite t-shirt! The dragon design is so cool and the fit is perfect.",
-      },
-    ],
   },
   {
     id: 3,
@@ -47,18 +24,6 @@ const products = [
     price: 25,
     description:
       "Fly me to the moon, Let me play among the stars, And let me see what spring is like, On a-Jupiter and Mars",
-    reviews: [
-      {
-        rating: 4,
-        emoji: "",
-        text: "I really like this t-shirt, the elf design is unique and the fabric is soft. The only downside is that it's a bit too long for my liking.",
-      },
-      {
-        rating: 5,
-        emoji: "",
-        text: "This t-shirt is amazing! The elf design is so cool and the fit is perfect. I've gotten so many compliments on it.",
-      },
-    ],
   },
   {
     id: 4,
@@ -67,18 +32,6 @@ const products = [
     price: 25,
     description:
       "I never knew, I never knew You could hold moonlight in your hands 'Til the night I held you You are my moonlight, moonlight",
-    reviews: [
-      {
-        rating: 5,
-        emoji: "",
-        text: "This t-shirt is awesome! The wizard design is so cool and the material is high-quality.",
-      },
-      {
-        rating: 4,
-        emoji: "",
-        text: "I really like this t-shirt, the wizard design is unique and the fabric is soft. The only downside is that it's a bit too tight around the neck.",
-      },
-    ],
   },
   {
     id: 5,
@@ -87,18 +40,6 @@ const products = [
     price: 25,
     description:
       "I wanna go to the moon, don't leave so soon (Don't leave so soon), How could I get through? (How could I get through?), I wanna go to the moon, don't leave so soon (Don't leave so soon)",
-    reviews: [
-      {
-        rating: 5,
-        emoji: "",
-        text: "This is the best t-shirt I've ever owned! The wizard design is amazing and the quality is top-notch.",
-      },
-      {
-        rating: 5,
-        emoji: "",
-        text: "I love this t-shirt! The wizard design is so cool and the fit is perfect. I wear it all the time.",
-      },
-    ],
   },
   {
     id: 6,
@@ -107,18 +48,6 @@ const products = [
     price: 25,
     description:
       "But we're lookin' at the same moon, Wonder if you miss me too when we're lookin' at the same moon, How can I be dead to you when we're lookin' at the same moon",
-    reviews: [
-      {
-        rating: 4,
-        emoji: "",
-        text: "I really like this t-shirt, the barbarian design is unique and the fabric is soft. The only downside is that it's a bit too baggy.",
-      },
-      {
-        rating: 5,
-        emoji: "",
-        text: "This t-shirt is amazing! The barbarian design is so cool and the fit is perfect. I've gotten so many compliments on it.",
-      },
-    ],
   },
 ];
 

@@ -1,24 +1,19 @@
 "use client";
 import { useState } from "react";
-import { useRef } from "react";
 
-import { Review } from "@/lib/types";
-import { useStore, useAtomValue, useSetAtom, useAtom } from "jotai";
+import { useAtom } from "jotai";
 import { Toggle } from "@/components/ui/toggle";
 import { reviewsAtom } from "@/lib/store/atoms";
 import { Input } from "@/components/ui/input";
 
 import Picker from "emoji-picker-react";
 
-export default function Reviews({ reviews }: { reviews: Review[] }) {
-  const [value, setValue] = useAtom(reviewsAtom);
-  const store = useStore();
+export default function Reviews({ productId }: { productId: number }) {
+  const [reviewRecord, setReviews] = useAtom(reviewsAtom);
 
-  const loaded = useRef(false);
-  if (!loaded.current) {
-    store.set(reviewsAtom, reviews);
-    loaded.current = true;
-  }
+  const reviewV = reviewRecord[productId];
+
+  console.log("reviewRecord", reviewRecord, reviewV, productId);
 
   const [reviewText, setReviewText] = useState("");
   const [reviewRating, setReviewRating] = useState(5);
@@ -27,7 +22,7 @@ export default function Reviews({ reviews }: { reviews: Review[] }) {
 
   return (
     <>
-      {value?.map((review, index) => (
+      {reviewV?.map((review, index) => (
         <div key={index} className="p-5">
           <div className="mt-1 text-lg leading-5 text-gray-300 font-light italic grid grid-cols-1 divide-y rounded bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5">
             <p className="">{review.text}</p>
@@ -38,13 +33,13 @@ export default function Reviews({ reviews }: { reviews: Review[] }) {
       <form
         onSubmit={async (evt) => {
           evt.preventDefault();
-          setValue([
-            ...value,
-            { text: reviewText, rating: reviewRating, emoji: chosenEmoji },
-          ]);
-
-          // TODO: add to server state
-          // await addReviewAction(reviewText, reviewRating);
+          setReviews({
+            ...reviewRecord,
+            [productId]: [
+              ...(reviewV ?? []),
+              { text: reviewText, rating: reviewRating, emoji: chosenEmoji },
+            ],
+          });
 
           setReviewText("");
           setReviewRating(5);

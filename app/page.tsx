@@ -9,12 +9,12 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="">
         <div className="">
-          <ul role="list" className="grid grid-cols-3 gap-6">
+          <ul role="list" className="grid col-grid-1 md:grid-cols-3 gap-6">
             {products.map((product) => {
               return (
                 <li key={product.id}>
                   <ProductCard {...product} />
-                  <Reviews reviews={product.reviews} />
+                  <Reviews productId={product.id} />
                 </li>
               );
             })}

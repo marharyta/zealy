@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const ProductCard = ({
+  id,
   name,
-  description,
-  price,
   image,
   small,
 }: {
+  id?: number;
   name?: string;
   image?: string | null;
   description?: string;
@@ -16,7 +16,7 @@ const ProductCard = ({
   return (
     <div className="p-2 flex flex-col">
       <Image
-        className={`aspect-[2/2] rounded-md object-cover`}
+        className={`aspect-[2/2] rounded-md object-cover hue-rotate-${90}`}
         src={image ?? ""}
         alt={`${name} image`}
         width={1024}
